@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765327590" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/gameLogic.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765405165" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/gameLogic.dcp">
   <File Type="PA-TCL" Name="gameLogic.tcl"/>
   <File Type="REPORTS-TCL" Name="gameLogic_reports.tcl"/>
   <File Type="RDS-RDS" Name="gameLogic.vds"/>
@@ -86,9 +86,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

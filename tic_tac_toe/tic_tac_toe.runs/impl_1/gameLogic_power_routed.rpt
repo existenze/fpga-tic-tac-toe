@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Tue Dec  9 16:49:40 2025
+| Date             : Wed Dec 10 14:23:02 2025
 | Host             : DESKTOP-1OLKM82 running 64-bit major release  (build 9200)
 | Command          : report_power -file gameLogic_power_routed.rpt -pb gameLogic_power_summary_routed.pb -rpx gameLogic_power_routed.rpx
 | Design           : gameLogic
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.104        |
+| Total On-Chip Power (W)  | 0.103        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.032        |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1202 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      742 |     20800 |            3.57 |
+| Slice Logic    |    <0.001 |      720 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      478 |     20800 |            2.30 |
 |   Register     |    <0.001 |       73 |     41600 |            0.18 |
-|   CARRY4       |    <0.001 |      169 |      8150 |            2.07 |
+|   CARRY4       |    <0.001 |       79 |      8150 |            0.97 |
 |   Others       |     0.000 |       18 |       --- |             --- |
-| Signals        |    <0.001 |      563 |       --- |             --- |
+| Signals        |    <0.001 |      472 |       --- |             --- |
 | I/O            |     0.029 |       38 |       106 |           35.85 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.104 |          |           |                 |
+| Total          |     0.103 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.009 |       0.008 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,12 +137,10 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------+-----------+
-| Name              | Power (W) |
-+-------------------+-----------+
-| gameLogic         |     0.032 |
-|   VGA_inst        |     0.001 |
-|     vga_sync_unit |     0.001 |
-+-------------------+-----------+
++-----------+-----------+
+| Name      | Power (W) |
++-----------+-----------+
+| gameLogic |     0.032 |
++-----------+-----------+
 
 

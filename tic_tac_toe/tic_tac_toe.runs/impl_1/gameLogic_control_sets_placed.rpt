@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Tue Dec  9 16:49:01 2025
+| Date         : Wed Dec 10 14:22:22 2025
 | Host         : DESKTOP-1OLKM82 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file gameLogic_control_sets_placed.rpt
 | Design       : gameLogic
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               4 |            3 |
-| No           | No                    | Yes                    |              29 |           16 |
+| No           | No                    | Yes                    |              29 |           13 |
 | No           | Yes                   | No                     |              20 |            9 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              20 |           14 |
+| Yes          | No                    | Yes                    |              20 |            9 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -76,9 +76,9 @@ Table of Contents
 |  clk_IBUF_BUFG                             |                                           | turnDisplay/seg[2]_i_1_n_0 |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                             |                                           |                            |                3 |              4 |         1.33 |
 |  VGA_inst/vga_sync_unit/pixel_reg_reg[1]_0 |                                           | Reset_IBUF                 |                3 |              6 |         2.00 |
-|  clk_IBUF_BUFG                             | VGA_inst/vga_sync_unit/v_count_reg0       | Reset_IBUF                 |                7 |             10 |         1.43 |
-|  clk_IBUF_BUFG                             | VGA_inst/vga_sync_unit/pixel_reg_reg[1]_0 | Reset_IBUF                 |                7 |             10 |         1.43 |
-| ~clk_IBUF_BUFG                             |                                           | Reset_IBUF                 |               10 |             19 |         1.90 |
+|  clk_IBUF_BUFG                             | VGA_inst/vga_sync_unit/v_count_reg0       | Reset_IBUF                 |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                             | VGA_inst/vga_sync_unit/pixel_reg_reg[1]_0 | Reset_IBUF                 |                5 |             10 |         2.00 |
+| ~clk_IBUF_BUFG                             |                                           | Reset_IBUF                 |                7 |             19 |         2.71 |
 |  clk_IBUF_BUFG                             |                                           | Reset_IBUF                 |               11 |             23 |         2.09 |
 +--------------------------------------------+-------------------------------------------+----------------------------+------------------+----------------+--------------+
 
