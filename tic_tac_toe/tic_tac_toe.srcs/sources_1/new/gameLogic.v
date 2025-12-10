@@ -43,7 +43,7 @@ module gameLogic(
 );
 
     reg [8:0]  sqrSel;
-    reg [17:0] Cells;
+    wire [17:0] Cells;
     reg [8:0]  prevIn;
     reg [8:0]  myIn;
     reg        Turn;      // 0 = X, 1 = O

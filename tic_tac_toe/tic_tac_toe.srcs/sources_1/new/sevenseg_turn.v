@@ -13,12 +13,12 @@ module sevenseg_turn(
         dp <= 1'b1;      // decimal point off
 
         if (turn == 1'b0) begin
-            // Show X - approximate with segments b,c,e,f
-            // a b c d e f g
-            seg <= 7'b1001000;  // segments 1,2,4,5 on (active-low)
-        end else begin
-            // Show O - digit 0 pattern
-            seg <= 7'b0000001;  // segments a,b,c,d,e,f on
+            // Digit "1"
+            seg <= 7'b1111001;  
+        end 
+        else begin
+            // Digit "2"
+            seg <= 7'b0100100;
         end
     end
 

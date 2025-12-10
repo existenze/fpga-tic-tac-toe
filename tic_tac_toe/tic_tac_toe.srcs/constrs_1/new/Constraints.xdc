@@ -31,7 +31,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports Reset]
 set_property PACKAGE_PIN U16 [get_ports winState]
 set_property IOSTANDARD LVCMOS33 [get_ports winState]
 
-## VGA (same as Instructables)
+## VGA
 set_property PACKAGE_PIN G19 [get_ports {rgb[8]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {rgb[8]}]
 set_property PACKAGE_PIN H19 [get_ports {rgb[9]}]
@@ -61,7 +61,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports hsync]
 set_property PACKAGE_PIN R19 [get_ports vsync]
 set_property IOSTANDARD LVCMOS33 [get_ports vsync]
 
-## Seven-segment display (from Basys-3-Master.xdc)
+## Seven-segment display
 set_property PACKAGE_PIN W7 [get_ports {seg[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
 set_property PACKAGE_PIN W6 [get_ports {seg[1]}]
